@@ -1,0 +1,10 @@
+@media (width > 768px) {
+  body {
+    background-color: yellow;
+  }
+}
+@media (width > 1024px) {
+  body {
+    background-color: pink;
+  }
+}/*# sourceMappingURL=main.css.map */

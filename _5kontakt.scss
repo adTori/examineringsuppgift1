@@ -1,0 +1,10 @@
+body {
+
+    @include tablet{
+        background-color: yellow;
+    }
+
+    @include desktop{
+        background-color: pink;
+    }
+}
