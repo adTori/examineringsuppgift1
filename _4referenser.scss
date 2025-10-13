@@ -7,7 +7,6 @@ html, body {
 header, body {
 
     background: $fourthColor;
-    color: $textColor;
 
     @include tablet{
         background-color: $fourthColor;
@@ -15,7 +14,7 @@ header, body {
             nav ul li {
                 display: inline-block;
                 position: relative;
-                background-color: $primaryColor;
+                background-color: $thirdColor;
                 padding: 10px;
                 margin: 0;
             }
@@ -35,6 +34,7 @@ header, body {
                 align-items: space-evenly;
                 gap: 0px;
             }
+            
 
 }
 
@@ -44,7 +44,7 @@ header, body {
             nav ul li {
                 display: inline-block;
                 justify-content: flex-end;
-                background-color: $primaryColor;
+                background-color: $thirdColor;
                 padding: 10px;
                 margin: 0;
             }
@@ -64,11 +64,19 @@ header, body {
                 align-items: space-evenly;
                 gap: 0px;
             }
+
     }
 
 }
 
-h1, h2 {
+.logotype {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
     text-align: center;
     color: $textColor;
 }

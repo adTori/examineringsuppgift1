@@ -14,8 +14,10 @@
 </head>
 <body>
 <header>
-<h1>MVF Design</h1>
-<img src="" alt="">
+<div class="logotype">
+    <img src="desktop-logotype.png" width=200 alt="Bild på logotyp" class="mobile-logotype">
+    <br>
+</div>
 <nav>
     <ul>
         <li><a href="1startsida.html">Start</a></li>
@@ -27,14 +29,14 @@
 </nav>
 </header>
 <main>
-    <h2>Kontakta oss</h2>
+    <h1>Kontakta oss</h1>
     <div class="form">
-        <p>Behöver du komma i kontakt med oss är du välkommen att ringa, maila, besöka eller använda kontaktformuläret nedan. Vi hanterar dina personuppgifter enligt GDPR.</p>
+        <p>Vill du komma i kontakt med oss är du välkommen att ringa, maila, besöka eller använda kontaktformuläret nedan. Vi hanterar dina personuppgifter enligt GDPR.</p>
         <form>
             <label for="name">Namn *</label>
-            <input type="text" id="name" name="name" placeholder="Ditt namn här" required>
+            <input type="text" id="name" name="name" placeholder="Ditt namn här" autocomplete="name" required>
             <label for="email">E-post *</label>
-            <input type="email" name="email" id="email" placeholder="Din e-postadress här" required>
+            <input type="email" name="email" id="email" placeholder="Din e-postadress här" autocomplete="email">
             <label for="phone">Telefonnummer</label>
             <input type="number" id="phone" name="phone" placeholder="Ditt telefonnummer här">
             <label for="reason">Kontaktorsak</label>  
@@ -64,8 +66,7 @@
             <br><br>
         </div>
         <div class="picture">
-            <img src="MVF.jpg" width=200 alt="Bild på företagsbyggnaden">
-            <p>Organisationsnummer: 338750-3350</p>
+            <img src="MVF.jpg" width=170 alt="Bild på företagsbyggnaden">
         </div>
         <div class="visit">
             <h3>Besöksadress</h3>
