@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.app {
+    display: flex;
+    min-height:100vh;
+}
+.sidebar {
+    flex: 1 1 0;
+    max-width: 300px;
+    padding:2rem 1rem;
+    background-color:rgb(5, 3, 28);
+}
+.sidebar .menu .menu-item {
+    display:block;
+    padding:1rem;
+    color:beige;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
