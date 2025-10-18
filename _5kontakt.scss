@@ -11,7 +11,7 @@ header, body {
     @include tablet{
         background-color: $fourthColor;
 
-            nav ul li {
+            /*nav ul li {
                 display: inline-block;
                 position: relative;
                 background-color: $thirdColor;
@@ -28,7 +28,7 @@ header, body {
                 text-decoration: none;
                 padding: 0 0.25rem;
             }
-
+            */
             .information {
                 flex-direction: row;
                 align-items: space-evenly;
@@ -48,7 +48,7 @@ header, body {
     @include desktop{
         background: $fourthColor;
 
-            nav ul li {
+           /* nav ul li {
                 display: inline-block;
                 justify-content: flex-end;
                 background-color: $thirdColor;
@@ -65,7 +65,7 @@ header, body {
                 text-decoration: none;
                 padding: 0 0.25rem;
             }
-
+            */
             .information {
                 flex-direction: row;
                 align-items: space-evenly;
