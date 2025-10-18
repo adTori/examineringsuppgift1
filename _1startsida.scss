@@ -1,23 +1,44 @@
+body {
+    display:flex;
+    flex-direction: column;
 
+    main {
+        margin-left:15vw;
+    }
+}
 .menuDiv {
 display: flex;
-min-height: 100vh;
 font-family: sans-serif;
-    h2 {
-        color:$logoColor;
-    }
+
     .sidebar {
-        background-color:$logoColor2;
-        width:20vw;
-        min-width:100px;
-        max-width: 200px;
+        background-color:$textColor;
+        width: 15vw;
+        min-width:10vw;
+        max-width: 15vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        height: 100vh;
+        top:0px;
+        left:0px;
     }
     .menu {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
-
+    .logga {
+        display:none;
+        max-width:100px;
+        max-height:100px;
+        padding:20px 5px;
+    }
+    .logga-mobile {
+        max-width:50px;
+        max-height:200px;
+        margin:5px;
+    }
     .menu-item {
         display:block;
         padding:20px 5px;
@@ -33,18 +54,46 @@ font-family: sans-serif;
         }
     }
 }
+footer {
+margin-left: 15vw;  
+}
+
 
 @include desktop {
 
+body {
+    display: block;
+
+    main {
+        margin-left:0vw;
+        margin-top:10vh;
+    }
+}
 .menuDiv {
 min-height: 10vh;
 min-width: 100vw;
 
-    h2 {
-        display:none;
-    }
     .sidebar {
-        min-width:100vw;
+        position:fixed;
+        top:0;
+        min-width:100%;
+        height:15vh;
+        max-height:20vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logga {
+        display:inline-block;
+        max-width:100px;
+        max-height:100px;
+        position:fixed;
+        top:-10px;
+        left:10px;
+    }
+    .logga-mobile {
+        display:none;
+        max-width:100px;
+        max-height:100px;
     }
     .menu {
         flex-direction: row;
@@ -63,73 +112,4 @@ min-width: 100vw;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.app {
-    display: flex;
-    min-height:100vh;
-}
-.sidebar {
-    flex: 1 1 0;
-    max-width: 200px;
-    padding:2rem 1rem;
-    background-color:rgb(5, 3, 28);
-}
-.sidebar .menu .menu-item {
-    display:block;
-    padding:1rem;
-    color:beige;
-    text-decoration: none;
-    transition: 0.2s linear;
-}
-
-.sidebar .menu .menu-item:hover,
-.sidebar .menu .menu-item.is-active {
-    color:#1fe995;
-    border-right: 5px solid #1fe995;
-}  
-*/
