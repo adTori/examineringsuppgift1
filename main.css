@@ -256,40 +256,54 @@ footer .copyRight p {
   height: 40vh;
 }
 
+.history h3 {
+  font-size: 20px;
+}
+.history p {
+  font-size: 16px;
+}
+
 .employees {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
 }
 .employees .employee {
-  border: 2px solid #B85C38;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 60vw;
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 600px;
   background-color: #333;
-  text-align: center;
+  border: 2px solid #B85C38;
+}
+.employees .employee:hover {
+  background-color: rgb(25.5, 25.5, 25.5);
+  border-radius: 10px;
 }
 .employees .employee img {
-  max-width: 60vw;
-  border-bottom: 2px solid #333;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .employees .employee .employeeInfo {
-  font-size: 2vw;
   color: white;
+  padding: 5px;
 }
 .employees .employee .employeeInfo .name {
   font-weight: bold;
+  text-align: center;
 }
 .employees .employee .employeeInfo .role {
   font-weight: bold;
+  text-align: center;
 }
 .employees .employee .employeeInfo .mail {
+  display: block;
   text-decoration: none;
   color: #B85C38;
+  text-align: center;
 }
 html, body {
   height: 100%;

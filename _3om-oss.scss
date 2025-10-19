@@ -4,41 +4,52 @@
         height: 40vh;
     }
 }
-
+.history {
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
 .employees {
 display:flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-gap:10px;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+gap:20px;
     .employee {
-    border: 2px solid $thirdColor;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 60vw;
-
-    background-color:$textColor;
-    text-align: center;
-
+        min-width: 100px;  
+        max-width: 300px;
+        min-height: 600px;
+        background-color: $textColor;
+        border:2px solid $thirdColor;
+        &:hover {
+            background-color: darken($textColor, 10%);
+            border-radius: 10px;
+        }
+    
         img {
-            max-width: 60vw;
-            border-bottom: 2px solid $textColor;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
         }
         .employeeInfo {
-            font-size: 2vw;
             color:white;
-            
+            padding:5px;
             .name {
                 font-weight: bold;
+                text-align: center;
             }
             .role {
                 font-weight: bold;
+                text-align: center;
             }
             .mail {
+                display:block;
                 text-decoration: none;
                 color:$thirdColor;
+                text-align: center;
             }
             .description {
 
