@@ -1,0 +1,49 @@
+.startBild {
+    &.omOss {
+        background-image: url("omossbild.jpg");
+        height: 40vh;
+    }
+}
+
+.employees {
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap:10px;
+    .employee {
+    border: 2px solid $thirdColor;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60vw;
+
+    background-color:$textColor;
+    text-align: center;
+
+        img {
+            max-width: 60vw;
+            border-bottom: 2px solid $textColor;
+        }
+        .employeeInfo {
+            font-size: 2vw;
+            color:white;
+            
+            .name {
+                font-weight: bold;
+            }
+            .role {
+                font-weight: bold;
+            }
+            .mail {
+                text-decoration: none;
+                color:$thirdColor;
+            }
+            .description {
+
+            }
+        }
+
+    }
+}

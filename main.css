@@ -8,7 +8,7 @@ body main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 body main .startBild {
   background-image: url("startbild.jpg");
@@ -23,12 +23,12 @@ body main .startBild {
   border: 0.5vh solid #B85C38;
 }
 body main .startBild .h1Start {
-  font-size: 3.5vh;
+  font-size: 6vw;
   color: #B85C38;
   margin: 2vh;
 }
 body main .startBild h2 {
-  font-size: 3vh;
+  font-size: 5vw;
   color: white;
   font-style: italic;
   margin: 0;
@@ -43,7 +43,7 @@ body main .cta {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 3vh;
+  font-size: 5vw;
 }
 body main .cta:hover {
   background-color: #202427;
@@ -157,15 +157,6 @@ footer .copyRight p {
   .menuDiv {
     font-size: 15px;
   }
-  .startBild .h1Start {
-    font-size: 4vh;
-  }
-  .startBild h2 {
-    font-size: 3.5vh;
-  }
-  .cta {
-    font-size: 3.5vh;
-  }
 }
 @media (width > 1024px) {
   body {
@@ -175,14 +166,8 @@ footer .copyRight p {
     margin-left: 0vw;
     margin-top: 10vh;
   }
-  body main .startBild .h1Start {
-    font-size: 8vh;
-  }
-  body main .startBild h2 {
-    font-size: 5vh;
-  }
-  body main .cta {
-    font-size: 6vh;
+  body main .startBild {
+    height: 50vh;
   }
   .menuDiv {
     min-height: 10vh;
@@ -265,6 +250,46 @@ footer .copyRight p {
   footer .copyRight p {
     color: white;
   }
+}
+.startBild.omOss {
+  background-image: url("omossbild.jpg");
+  height: 40vh;
+}
+
+.employees {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.employees .employee {
+  border: 2px solid #B85C38;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60vw;
+  background-color: #333;
+  text-align: center;
+}
+.employees .employee img {
+  max-width: 60vw;
+  border-bottom: 2px solid #333;
+}
+.employees .employee .employeeInfo {
+  font-size: 2vw;
+  color: white;
+}
+.employees .employee .employeeInfo .name {
+  font-weight: bold;
+}
+.employees .employee .employeeInfo .role {
+  font-weight: bold;
+}
+.employees .employee .employeeInfo .mail {
+  text-decoration: none;
+  color: #B85C38;
 }
 html, body {
   height: 100%;

@@ -8,7 +8,7 @@ body {
         flex:1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         .startBild {
             background-image: url("startbild.jpg");
             background-size: cover;
@@ -21,12 +21,12 @@ body {
             align-items: center;
             border: 0.5vh solid $thirdColor;
             .h1Start {
-                font-size: 3.5vh;
+                font-size: 6vw;
                 color:$thirdColor;
                 margin:2vh;
             }
             h2 {
-                font-size: 3vh;
+                font-size: 5vw;
                 color: white;
                 font-style: italic;
                 margin:0;
@@ -42,7 +42,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            font-size: 3vh;
+            font-size: 5vw;
 
             &:hover {
                 background-color: #202427;
@@ -165,17 +165,6 @@ background-color:$textColor;
 .menuDiv {
     font-size: 15px;
 }
-.startBild {
-    .h1Start {
-        font-size: 4vh;
-    }
-    h2 {
-        font-size: 3.5vh;
-    }
-    }
-    .cta {
-        font-size: 3.5vh;
-    }
 }
 
 @include desktop {
@@ -188,16 +177,8 @@ body {
         margin-top:10vh;
 
         .startBild {
-            .h1Start {
-                font-size: 8vh;
-            }
-            h2 {
-                font-size: 5vh;
-            }
-            }
-            .cta {
-                font-size: 6vh;
-            }
+            height: 50vh;
+        }
     }
 }
 .menuDiv {
