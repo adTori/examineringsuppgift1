@@ -1,11 +1,56 @@
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 body main {
   margin-left: 20vw;
   flex: 1;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body main .startBild {
+  background-image: url("startbild.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5vh solid #B85C38;
+}
+body main .startBild .h1Start {
+  font-size: 3.5vh;
+  color: #B85C38;
+  margin: 2vh;
+}
+body main .startBild h2 {
+  font-size: 3vh;
+  color: white;
+  font-style: italic;
+  margin: 0;
+}
+body main .cta {
+  margin: 2vh;
+  background-color: #B85C38;
+  color: #333;
+  text-decoration: none;
+  height: 16vh;
+  border: 0.5vh solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3vh;
+}
+body main .cta:hover {
+  background-color: #202427;
+  border: 0.5vh solid #B85C38;
+}
+body main .cta:hover h3 {
+  color: white;
 }
 
 .menuDiv {
@@ -112,6 +157,15 @@ footer .copyRight p {
   .menuDiv {
     font-size: 15px;
   }
+  .startBild .h1Start {
+    font-size: 4vh;
+  }
+  .startBild h2 {
+    font-size: 3.5vh;
+  }
+  .cta {
+    font-size: 3.5vh;
+  }
 }
 @media (width > 1024px) {
   body {
@@ -120,6 +174,15 @@ footer .copyRight p {
   body main {
     margin-left: 0vw;
     margin-top: 10vh;
+  }
+  body main .startBild .h1Start {
+    font-size: 8vh;
+  }
+  body main .startBild h2 {
+    font-size: 5vh;
+  }
+  body main .cta {
+    font-size: 6vh;
   }
   .menuDiv {
     min-height: 10vh;
