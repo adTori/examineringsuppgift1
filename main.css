@@ -316,24 +316,6 @@ header, body {
 @media (width > 768px) {
   header, body {
     background-color: #EED6C4;
-    /*    nav ul li {
-            display: inline-block;
-            position: relative;
-            background-color: $logoColor;
-            padding: 10px;
-            margin: 0;
-        }
-
-        nav ul {
-            margin: 0;
-        }
-
-        nav ul li a {
-            color: inherit;
-            text-decoration: none;
-            padding: 0 0.25rem;
-        }
-        */
   }
   header .referenser, body .referenser {
     flex-direction: row;
@@ -344,24 +326,6 @@ header, body {
 @media (width > 1024px) {
   header, body {
     background: #EED6C4;
-    /*   nav ul li {
-           display: inline-block;
-           justify-content: flex-end;
-           background-color: $logoColor;
-           padding: 10px;
-           margin: 0;
-       }
-
-       nav ul {
-           margin: 0;
-       }
-
-       nav ul li a {
-           color: inherit;
-           text-decoration: none;
-           padding: 0 0.25rem;
-       }
-       */
   }
   header .referenser, body .referenser {
     flex-direction: row;
@@ -408,24 +372,6 @@ header, body {
 @media (width > 768px) {
   header, body {
     background-color: #EED6C4;
-    /*nav ul li {
-        display: inline-block;
-        position: relative;
-        background-color: $logoColor;
-        padding: 10px;
-        margin: 0;
-    }
-
-    nav ul {
-        margin: 0;
-    }
-
-    nav ul li a {
-        color: inherit;
-        text-decoration: none;
-        padding: 0 0.25rem;
-    }
-    */
   }
   header .information, body .information {
     flex-direction: row;
@@ -442,24 +388,6 @@ header, body {
 @media (width > 1024px) {
   header, body {
     background: #EED6C4;
-    /* nav ul li {
-         display: inline-block;
-         justify-content: flex-end;
-         background-color: $logoColor;
-         padding: 10px;
-         margin: 0;
-     }
-
-     nav ul {
-         margin: 0;
-     }
-
-     nav ul li a {
-         color: inherit;
-         text-decoration: none;
-         padding: 0 0.25rem;
-     }
-     */
   }
   header .information, body .information {
     flex-direction: row;
