@@ -11,7 +11,7 @@ body main {
   justify-content: flex-start;
 }
 body main .startBild {
-  background-image: url("startbild.jpg");
+  background-image: url("interior.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -252,7 +252,7 @@ footer .copyRight p {
   }
 }
 .startBild.omOss {
-  background-image: url("omossbild.jpg");
+  background-image: url("interior2.jpg");
   height: 40vh;
 }
 
@@ -305,6 +305,7 @@ footer .copyRight p {
   color: #B85C38;
   text-align: center;
 }
+
 html, body {
   height: 100%;
 }
@@ -315,11 +316,10 @@ header, body {
 @media (width > 768px) {
   header, body {
     background-color: #EED6C4;
-<<<<<<< HEAD
     /*    nav ul li {
             display: inline-block;
             position: relative;
-            background-color: $thirdColor;
+            background-color: $logoColor;
             padding: 10px;
             margin: 0;
         }
@@ -334,23 +334,6 @@ header, body {
             padding: 0 0.25rem;
         }
         */
-=======
-  }
-  header nav ul li, body nav ul li {
-    display: inline-block;
-    position: relative;
-    background-color: #996c55;
-    padding: 10px;
-    margin: 0;
-  }
-  header nav ul, body nav ul {
-    margin: 0;
-  }
-  header nav ul li a, body nav ul li a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.25rem;
->>>>>>> 60861eb905583061554e53d62687ef6947e61e21
   }
   header .referenser, body .referenser {
     flex-direction: row;
@@ -361,11 +344,10 @@ header, body {
 @media (width > 1024px) {
   header, body {
     background: #EED6C4;
-<<<<<<< HEAD
     /*   nav ul li {
            display: inline-block;
            justify-content: flex-end;
-           background-color: $thirdColor;
+           background-color: $logoColor;
            padding: 10px;
            margin: 0;
        }
@@ -380,23 +362,6 @@ header, body {
            padding: 0 0.25rem;
        }
        */
-=======
-  }
-  header nav ul li, body nav ul li {
-    display: inline-block;
-    justify-content: flex-end;
-    background-color: #996c55;
-    padding: 10px;
-    margin: 0;
-  }
-  header nav ul, body nav ul {
-    margin: 0;
-  }
-  header nav ul li a, body nav ul li a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.25rem;
->>>>>>> 60861eb905583061554e53d62687ef6947e61e21
   }
   header .referenser, body .referenser {
     flex-direction: row;
@@ -443,11 +408,10 @@ header, body {
 @media (width > 768px) {
   header, body {
     background-color: #EED6C4;
-<<<<<<< HEAD
     /*nav ul li {
         display: inline-block;
         position: relative;
-        background-color: $thirdColor;
+        background-color: $logoColor;
         padding: 10px;
         margin: 0;
     }
@@ -462,23 +426,6 @@ header, body {
         padding: 0 0.25rem;
     }
     */
-=======
-  }
-  header nav ul li, body nav ul li {
-    display: inline-block;
-    position: relative;
-    background-color: #996c55;
-    padding: 10px;
-    margin: 0;
-  }
-  header nav ul, body nav ul {
-    margin: 0;
-  }
-  header nav ul li a, body nav ul li a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.25rem;
->>>>>>> 60861eb905583061554e53d62687ef6947e61e21
   }
   header .information, body .information {
     flex-direction: row;
@@ -495,11 +442,10 @@ header, body {
 @media (width > 1024px) {
   header, body {
     background: #EED6C4;
-<<<<<<< HEAD
     /* nav ul li {
          display: inline-block;
          justify-content: flex-end;
-         background-color: $thirdColor;
+         background-color: $logoColor;
          padding: 10px;
          margin: 0;
      }
@@ -514,23 +460,6 @@ header, body {
          padding: 0 0.25rem;
      }
      */
-=======
-  }
-  header nav ul li, body nav ul li {
-    display: inline-block;
-    justify-content: flex-end;
-    background-color: #996c55;
-    padding: 10px;
-    margin: 0;
-  }
-  header nav ul, body nav ul {
-    margin: 0;
-  }
-  header nav ul li a, body nav ul li a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.25rem;
->>>>>>> 60861eb905583061554e53d62687ef6947e61e21
   }
   header .information, body .information {
     flex-direction: row;
