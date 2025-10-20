@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -12,7 +17,7 @@ body main {
   justify-content: flex-start;
 }
 body main .startBild {
-  background-image: url("interior.jpg");
+  background-image: url("interior1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,25 +51,32 @@ body main .startBild.tjänster {
   background-image: url("interior2.jpg");
 }
 body main .startBild.omOss {
-  background-image: url("interior2.jpg");
+  background-image: url("interior3.jpg");
 }
 body main .startBild.tjänster {
-  background-image: url("interior2.jpg");
+  background-image: url("interior4.jpg");
 }
 body main .startBild.tjänster {
-  background-image: url("interior2.jpg");
+  background-image: url("interior5.jpg");
 }
 body main .cta {
+  display: inline-block;
+  padding: 0;
   margin: 2vh;
+  text-decoration: none;
+  border: 0.5vh solid #333;
   background-color: #B85C38;
   color: #333;
-  text-decoration: none;
-  height: 16vh;
-  border: 0.5vh solid #333;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-size: 5vw;
+}
+body main .cta div {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body main .cta:hover {
   background-color: #202427;
@@ -111,8 +123,7 @@ body main .cta:hover h3 {
 }
 
 .menuOption {
-  display: block;
-  padding: 20px 5px;
+  padding: 0;
   color: white;
 }
 .menuOption:hover {
@@ -123,6 +134,10 @@ body main .cta:hover h3 {
   border-right: 5px solid #996c55;
 }
 .menuOption a {
+  display: block;
+  padding: 20px 5px;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: inherit;
 }
@@ -145,18 +160,23 @@ footer .footerLinks ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 20px 0px;
   padding: 0;
 }
 footer .footerLinks ul a {
+  display: block;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
   text-decoration: none;
   color: white;
   margin: 10px;
 }
 footer .footerLinks ul a:hover {
-  color: #996c55;
+  background-color: white;
 }
 footer .copyRight {
   display: flex;
@@ -173,9 +193,6 @@ footer .copyRight p {
   }
 }
 @media (width > 1024px) {
-  body {
-    display: block;
-  }
   body main {
     margin-left: 0vw;
     margin-top: 10vh;
@@ -208,7 +225,7 @@ footer .copyRight p {
     flex-direction: row;
     justify-content: center;
   }
-  .menuDiv .menuOption {
+  .menuDiv .menuOption a {
     padding: 20px 50px;
   }
   .menuDiv .menuOption:hover {
