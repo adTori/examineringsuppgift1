@@ -1,0 +1,95 @@
+.tjänster {
+  padding: 1rem;
+}
+
+.tjänster-flex {
+  display: flex;
+  flex-direction: column; // Mobil: staplat
+  gap: 1rem;
+  background-color: $secondaryColor;
+  padding: 1rem;
+  align-items: center;
+
+  @include desktop {
+    flex-direction: row; // Desktop: rader
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.tjänster-box {
+  width: 100%; // Mobilvänlig
+  max-width: 500px;
+  background-color: $thirdColor;
+  padding: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta {
+    padding-top: 10px;
+  }
+}
+
+// Bokning (mobil först)
+.Bokning-del {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+
+  @include desktop {
+    align-items: flex-end;
+    padding: 2rem;
+    text-align: right;
+  }
+}
+
+.bokning-text {
+  color: $fourthColor;
+  font-size: 1rem;
+
+  @include desktop {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+}
+
+.video-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.fix-button {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+
+  @include desktop {
+    font-size: 1.5rem;
+  }
+
+  a {
+    background-color: $thirdColor;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    color: $fourthColor;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+      background-color: $secondaryColor;
+      color: $textColor;
+    }
+  }
+}
