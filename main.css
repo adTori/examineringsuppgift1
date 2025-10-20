@@ -24,14 +24,22 @@ body main .startBild {
 }
 body main .startBild .h1Start {
   font-size: 6vw;
-  color: #B85C38;
   margin: 2vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  display: inline-block;
+  padding: 3px 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 body main .startBild h2 {
   font-size: 5vw;
-  color: white;
   font-style: italic;
   margin: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  display: inline-block;
+  padding: 3px 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 body main .cta {
   margin: 2vh;
