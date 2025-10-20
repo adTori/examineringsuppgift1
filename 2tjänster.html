@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta name="description" content="Professionell inredningsdesign och homestyling. Vi skapar personliga och funktionella hem.">
     <title>MVF Design - Tjänster</title>
     <link rel="stylesheet" href="main.css" />
     <link
@@ -32,58 +33,58 @@
         </aside>
     </div>
     <main>
-      <h1>Våra Tjänster</h1>
+      <section class="tjanster">
+        <h1>Våra Tjänster</h1>
 
-      <div class="tjänster">
-        <div class="Homestyling">
-          <a href="homestyling.html">
-            <h2>Home Styling / Renovation</h2>
-            <img
-              src="Homestyling.jpg"
-              alt="Exempel på homestyling"
-              width="500"
-              height="400"
-            />
-          </a>
+        <div class="tjänster-flex">
+          <div class="tjänster-box">
+            <img src="homestyling.jpg" alt="Bild på homestyling" />
+            <h2>HOMESTYLING</h2>
+            <p>
+              Låt våra inredare skapa ett harmoniskt hem inför försäljning eller
+              för en ny livsstil.
+            </p>
+            <a href="#" class="cta">Se prisexempel</a>
+          </div>
+
+          <div class="tjänster-box">
+            <img src="kök.jpg" alt="Bild på kök" />
+            <h2>KÖK</h2>
+            <p>
+              Vi erbjuder skräddarsydda kökslösningar från idé till färdigt
+              resultat. Vi hjälper dig att maximera både stil och funktion.
+            </p>
+            <a href="#" class="cta">Se prisexempel</a>
+          </div>
+
+          <div class="tjänster-box">
+            <img src="forvaring.jpeg" alt="Bild på förvaring" />
+            <h2>FÖRVARING</h2>
+            <p>
+              Anpassad förvaring efter dina behov. Vi designar och bygger smarta
+              lösningar för hem och kontor.
+            </p>
+            <a href="#" class="cta">Se prisexempel</a>
+          </div>
         </div>
+      </section>
+      <section class="Bokning-del">
+        <video autoplay muted loop class="video-background">
+          <source src="Video.inspo.mp4" type="video/mp4" />
+        </video>
+        <div class="bokning-text">
+        <p>
+          Att boka ett möte med oss kostar inget. <br />Välj mellan ett hembesök
+          hos er eller boka en online-möte. <br />Prata med vår designer och
+          diskutera dina önskemål. <br>Tillsammans tar vi fram en ritning och en
+          offert.
+        </p>
 
-        <div class="kök">
-          <a href="kok.html">
-            <h2>Kök</h2>
-            <img
-              src="Kök.jpg"
-              alt="Modern kök med vit inredning"
-              width="500"
-              height="400"
-            />
-          </a>
+        <div class="fix-button">
+          <a href="#">Boka en planeringsmöte</a>
         </div>
-
-        <div class="forvaring">
-          <a href="forvaring.html">
-            <h2>Förvaring</h2>
-            <img
-              src="forvaring.jpeg"
-              alt="Snygg väggförvaring och hyllsystem"
-              width="500"
-              height="400"
-            />
-          </a>
         </div>
-      </div>
-
-      <p>
-        Vi erbjuder dig som kund olika sätt att genomföra ditt möte med oss.
-        Nedan listar vi de mötesformer vi kan erbjuda dig just nu.
-      </p>
-      <div class="mötesbokning">
-        <button type="button" onclick="location.href='bokning-online.html'">
-          Boka ett onlinemöte
-        </button>
-        <button type="button" onclick="location.href='hembesok.html'">
-          Boka ett hembesök
-        </button>
-      </div>
+      </section>
     </main>
     <footer>
         <div class="footerLogga">
