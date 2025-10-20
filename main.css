@@ -12,7 +12,7 @@ header, body {
   header nav ul li, body nav ul li {
     display: inline-block;
     position: relative;
-    background-color: #B85C38;
+    background-color: #996c55;
     padding: 10px;
     margin: 0;
   }
@@ -37,7 +37,7 @@ header, body {
   header nav ul li, body nav ul li {
     display: inline-block;
     justify-content: flex-end;
-    background-color: #B85C38;
+    background-color: #996c55;
     padding: 10px;
     margin: 0;
   }
@@ -78,7 +78,8 @@ h1 {
 
 .ref1, .ref2, .ref3 {
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #422800;
+  box-shadow: #422800 2px 2px 0 0;
   margin: 10px;
   padding: 20px;
 }
@@ -97,7 +98,7 @@ header, body {
   header nav ul li, body nav ul li {
     display: inline-block;
     position: relative;
-    background-color: #B85C38;
+    background-color: #996c55;
     padding: 10px;
     margin: 0;
   }
@@ -128,7 +129,7 @@ header, body {
   header nav ul li, body nav ul li {
     display: inline-block;
     justify-content: flex-end;
-    background-color: #B85C38;
+    background-color: #996c55;
     padding: 10px;
     margin: 0;
   }
@@ -165,18 +166,20 @@ h2, h3 {
   color: #333;
 }
 
-#name, #email, #phone, #reason {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  min-width: 20%;
-  max-width: 200px;
+#name, #email, #tel, #reason {
+  min-height: 2em;
+  width: 30%;
+  border: 2px solid #422800;
+  margin: 20px 0px;
 }
 
 .form-control {
   margin: 0 0 0.6em 0;
   min-height: 13em;
-  width: 98%;
+  width: 95%;
+  border: 2px solid #422800;
+  box-shadow: #422800 2px 2px 0 0;
+  padding: 4px;
 }
 
 .information {
@@ -191,4 +194,33 @@ h2, h3 {
 .contact, .visit, .picture {
   text-align: center;
   color: #333;
+}
+
+.send {
+  background-color: #EED6C4;
+  border: 2px solid #422800;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #333;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  min-width: 120px;
+  padding: 0 25px;
+}
+
+.send:hover {
+  background-color: #996c55;
+}
+
+.send:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
 }/*# sourceMappingURL=main.css.map */
