@@ -20,30 +20,40 @@ body {
             justify-content: center;
             align-items: center;
             border: 0.5vh solid $thirdColor;
+            gap:3vh;
 
+            .background {
+                background-color: rgba(0, 0, 0, 0.6); // translucent background behind text
+                color: #fff;
+                padding: 1vh 1vw;
+                border-radius: 10px;
+                max-width: 80%;
+            }
             .h1Start {
-                font-size: 6vw;
-                //color:$thirdColor;
-                margin:2vh;
-
-                background-color: rgba(255, 255, 255, 0.5);
-                color: black;
-                display: inline-block;
-                padding: 3px 3px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                font-size: $h1;
+                color:$thirdColor;
+                margin:0;
             }
             h2 {
-                font-size: 5vw;
-                //color: white;
+                font-size: $h2;
+                color: white;
                 font-style: italic;
                 margin:0;
-
-                background-color: rgba(255, 255, 255, 0.5);
-                color: black;
-                display: inline-block;
-                padding: 3px 3px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
+
+            &.tjänster {
+                background-image: url("interior2.jpg");
+            }
+            &.omOss {
+                background-image: url("interior2.jpg");
+            }  
+            &.tjänster {
+                background-image: url("interior2.jpg");
+            }
+            &.tjänster {
+                background-image: url("interior2.jpg");
+            }
+
         }
         .cta {
             margin:2vh;
@@ -65,8 +75,6 @@ body {
                     color:white;
                 }
             }
-
-
         }
     }
 }
@@ -96,15 +104,9 @@ font-size: 10px;
     
     }
     .logga {
-        display:none;
         max-width:100px;
         max-height:100px;
         padding:20px 5px;
-    }
-    .logga-mobile {
-        max-width:50px;
-        max-height:200px;
-        margin:5px;
     }
     .menuList {
     list-style: none;
@@ -209,17 +211,11 @@ font-size: 20px;
         justify-content: center;
     }
     .logga {
-        display:inline-block;
         max-width:100px;
         max-height:100px;
         position:fixed;
         top:-10px;
         left:10px;
-    }
-    .logga-mobile {
-        display:none;
-        max-width:100px;
-        max-height:100px;
     }
     .menuList {
         flex-direction: row;

@@ -22,25 +22,37 @@ body main .startBild {
   justify-content: center;
   align-items: center;
   border: 0.5vh solid #B85C38;
+  gap: 3vh;
+}
+body main .startBild .background {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  max-width: 80%;
 }
 body main .startBild .h1Start {
   font-size: 6vw;
-  margin: 2vh;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-  display: inline-block;
-  padding: 3px 3px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #B85C38;
+  margin: 0;
 }
 body main .startBild h2 {
-  font-size: 5vw;
+  font-size: 4vw;
+  color: white;
   font-style: italic;
   margin: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-  display: inline-block;
-  padding: 3px 3px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body main .startBild.tjänster {
+  background-image: url("interior2.jpg");
+}
+body main .startBild.omOss {
+  background-image: url("interior2.jpg");
+}
+body main .startBild.tjänster {
+  background-image: url("interior2.jpg");
+}
+body main .startBild.tjänster {
+  background-image: url("interior2.jpg");
 }
 body main .cta {
   margin: 2vh;
@@ -87,16 +99,9 @@ body main .cta:hover h3 {
 }
 
 .logga {
-  display: none;
   max-width: 100px;
   max-height: 100px;
   padding: 20px 5px;
-}
-
-.logga-mobile {
-  max-width: 50px;
-  max-height: 200px;
-  margin: 5px;
 }
 
 .menuList {
@@ -193,17 +198,11 @@ footer .copyRight p {
     justify-content: center;
   }
   .menuDiv .logga {
-    display: inline-block;
     max-width: 100px;
     max-height: 100px;
     position: fixed;
     top: -10px;
     left: 10px;
-  }
-  .menuDiv .logga-mobile {
-    display: none;
-    max-width: 100px;
-    max-height: 100px;
   }
   .menuDiv .menuList {
     flex-direction: row;
@@ -357,7 +356,6 @@ footer .copyRight p {
 
 .startBild.omOss {
   background-image: url("interior2.jpg");
-  height: 40vh;
 }
 
 .history h3 {
