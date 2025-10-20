@@ -1,281 +1,31 @@
 @charset "UTF-8";
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-body main {
-  margin-left: 20vw;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-body main .startBild {
-  background-image: url("interior1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 0.5vh solid #B85C38;
-  gap: 3vh;
-}
-body main .startBild .background {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 1vh 1vw;
-  border-radius: 10px;
-  max-width: 80%;
-}
-body main .startBild .h1Start {
-  font-size: 6vw;
-  color: #B85C38;
-  margin: 0;
-}
-body main .startBild h2 {
-  font-size: 4vw;
-  color: white;
-  font-style: italic;
-  margin: 0;
-}
-body main .startBild.tjänster {
-  background-image: url("interior2.jpg");
-}
-body main .startBild.omOss {
-  background-image: url("interior3.jpg");
-}
-body main .startBild.tjänster {
-  background-image: url("interior4.jpg");
-}
-body main .startBild.tjänster {
-  background-image: url("interior5.jpg");
-}
-body main .cta {
+.cta {
   display: inline-block;
   padding: 0;
-  margin: 2vh;
+  margin: 20px;
   text-decoration: none;
-  border: 0.5vh solid #333;
+  border: 5px solid #333;
   background-color: #B85C38;
   color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body main .cta div {
+.cta div {
   width: 200px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body main .cta:hover {
+.cta:hover {
   background-color: #202427;
-  border: 0.5vh solid #B85C38;
+  border: 5px solid #B85C38;
 }
-body main .cta:hover h3 {
+.cta:hover h3 {
   color: white;
 }
 
-.menuDiv {
-  display: flex;
-  font-family: sans-serif;
-  font-size: 10px;
-}
-.menuDiv .sidebar {
-  background-color: #333;
-  width: 20vw;
-  min-width: 10vw;
-  max-width: 20vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: fixed;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
-}
-.menuDiv .menuList {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.logga {
-  max-width: 100px;
-  max-height: 100px;
-  padding: 20px 5px;
-}
-
-.menuList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menuOption {
-  padding: 0;
-  color: white;
-}
-.menuOption:hover {
-  background-color: #202427;
-  border-right: 5px solid #996c55;
-}
-.menuOption.here {
-  border-right: 5px solid #996c55;
-}
-.menuOption a {
-  display: block;
-  padding: 20px 5px;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: inherit;
-}
-
-footer {
-  margin-left: 20vw;
-  display: flex;
-  flex-direction: column;
-  background-color: #333;
-}
-footer .footerLogga img {
-  margin: 5px;
-  max-width: 50px;
-  max-height: 50px;
-}
-footer .footerLinks {
-  background-color: #202427;
-}
-footer .footerLinks ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 20px 0px;
-  padding: 0;
-}
-footer .footerLinks ul a {
-  display: block;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 20px;
-  text-decoration: none;
-  color: white;
-  margin: 10px;
-}
-footer .footerLinks ul a:hover {
-  background-color: white;
-}
-footer .copyRight {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-footer .copyRight p {
-  color: white;
-}
-
-@media (width > 768px) {
-  .menuDiv {
-    font-size: 15px;
-  }
-}
-@media (width > 1024px) {
-  body main {
-    margin-left: 0vw;
-    margin-top: 10vh;
-  }
-  body main .startBild {
-    height: 50vh;
-  }
-  .menuDiv {
-    min-height: 10vh;
-    min-width: 100vw;
-    font-size: 20px;
-  }
-  .menuDiv .sidebar {
-    position: fixed;
-    top: 0;
-    min-width: 100%;
-    height: 15vh;
-    max-height: 100px;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .menuDiv .logga {
-    max-width: 100px;
-    max-height: 100px;
-    position: fixed;
-    top: -10px;
-    left: 10px;
-  }
-  .menuDiv .menuList {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .menuDiv .menuOption a {
-    padding: 20px 50px;
-  }
-  .menuDiv .menuOption:hover {
-    border-right: none;
-    border-bottom: 5px solid #996c55;
-  }
-  .menuDiv .menuOption.here {
-    border-right: none;
-    border-bottom: 5px solid #996c55;
-  }
-  footer {
-    margin-left: 0vw;
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-  }
-  footer .footerLogga img {
-    margin: 5px;
-    max-width: 50px;
-    max-height: 50px;
-  }
-  footer .footerLinks {
-    background-color: #202427;
-  }
-  footer .footerLinks ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 20px 0px;
-    padding: 0;
-  }
-  footer .footerLinks ul a {
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-  }
-  footer .footerLinks ul a:hover {
-    color: #996c55;
-  }
-  footer .copyRight {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  footer .copyRight p {
-    color: white;
-  }
-}
 .tjänster {
   padding: 1rem;
 }
@@ -586,4 +336,277 @@ h2, h3 {
 .send:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
+}
+
+.menuDiv {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+.menuDiv .sidebar {
+  background-color: #333;
+  width: 20vw;
+  min-width: 10vw;
+  max-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+}
+.menuDiv .menuList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logga {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 20px 5px;
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuOption {
+  padding: 0;
+  color: white;
+}
+.menuOption:hover {
+  background-color: #202427;
+  border-right: 5px solid #996c55;
+}
+.menuOption.here {
+  border-right: 5px solid #996c55;
+}
+.menuOption a {
+  display: block;
+  padding: 20px 5px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (width > 768px) {
+  .menuDiv {
+    font-size: 15px;
+  }
+}
+@media (width > 1024px) {
+  .menuDiv {
+    min-height: 10vh;
+    min-width: 100vw;
+    font-size: 20px;
+  }
+  .menuDiv .sidebar {
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    height: 15vh;
+    max-height: 100px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menuDiv .logga {
+    max-width: 100px;
+    max-height: 100px;
+    position: fixed;
+    top: -10px;
+    left: 10px;
+  }
+  .menuDiv .menuList {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menuDiv .menuOption a {
+    padding: 20px 50px;
+  }
+  .menuDiv .menuOption:hover {
+    border-right: none;
+    border-bottom: 5px solid #996c55;
+  }
+  .menuDiv .menuOption.here {
+    border-right: none;
+    border-bottom: 5px solid #996c55;
+  }
+}
+footer {
+  margin-left: 20vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+}
+footer .footerLogga img {
+  margin: 5px;
+  max-width: 50px;
+  max-height: 50px;
+}
+footer .footerLinks {
+  background-color: #202427;
+}
+footer .footerLinks ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px 0px;
+  padding: 0;
+}
+footer .footerLinks ul a {
+  display: block;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+footer .footerLinks ul a:hover {
+  background-color: white;
+}
+footer .copyRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .copyRight p {
+  color: white;
+}
+
+@media (width > 1024px) {
+  footer {
+    margin-left: 0vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+  }
+  footer .footerLogga img {
+    margin: 5px;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  footer .footerLinks {
+    background-color: #202427;
+  }
+  footer .footerLinks ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 20px 0px;
+    padding: 0;
+  }
+  footer .footerLinks ul a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+  }
+  footer .footerLinks ul a:hover {
+    color: #996c55;
+  }
+  footer .copyRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .copyRight p {
+    color: white;
+  }
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body main {
+  margin-left: 20vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body main .startBild {
+  background-image: url("interior1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #B85C38;
+  gap: 30px;
+}
+body main .startBild .background {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+body main .startBild .h1Start {
+  font-size: 20px;
+  color: #B85C38;
+  margin: 0;
+}
+body main .startBild h2 {
+  font-size: 10px;
+  color: white;
+  font-style: italic;
+  margin: 0;
+}
+body main .startBild.tjänster {
+  background-image: url("interior2.jpg");
+}
+body main .startBild.omOss {
+  background-image: url("interior3.jpg");
+}
+body main .startBild.referenser {
+  background-image: url("interior4.jpg");
+}
+body main .startBild.kontakt {
+  background-image: url("interior5.jpg");
+}
+
+@media (width > 768px) {
+  body main .startBild {
+    height: 300px;
+  }
+  body main .startBild .h1Start {
+    font-size: 40px;
+  }
+  body main .startBild h2 {
+    font-size: 20px;
+  }
+}
+@media (width > 1024px) {
+  body main {
+    margin-left: 0vw;
+    margin-top: 10vh;
+  }
+  body main .startBild {
+    height: 300px;
+  }
+  body main .startBild .h1Start {
+    font-size: 60px;
+  }
+  body main .startBild h2 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
