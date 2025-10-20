@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   display: flex;
   flex-direction: column;
@@ -251,6 +252,101 @@ footer .copyRight p {
     color: white;
   }
 }
+.tjänster {
+  padding: 1rem;
+}
+
+.tjänster-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #DAC0A3;
+  padding: 1rem;
+  align-items: center;
+}
+@media (width > 1024px) {
+  .tjänster-flex {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.tjänster-box {
+  width: 100%;
+  max-width: 500px;
+  background-color: #B85C38;
+  padding: 1rem;
+}
+.tjänster-box img {
+  width: 100%;
+  height: auto;
+}
+.tjänster-box .cta {
+  padding-top: 10px;
+}
+
+.Bokning-del {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+@media (width > 1024px) {
+  .Bokning-del {
+    align-items: flex-end;
+    padding: 2rem;
+    text-align: right;
+  }
+}
+
+.bokning-text {
+  color: #EED6C4;
+  font-size: 1rem;
+}
+@media (width > 1024px) {
+  .bokning-text {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+}
+
+.video-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.fix-button {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+@media (width > 1024px) {
+  .fix-button {
+    font-size: 1.5rem;
+  }
+}
+.fix-button a {
+  background-color: #B85C38;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  color: #EED6C4;
+  text-decoration: none;
+  display: inline-block;
+}
+.fix-button a:hover, .fix-button a:focus {
+  background-color: #DAC0A3;
+  color: #333;
+}
+
 .startBild.omOss {
   background-image: url("interior2.jpg");
   height: 40vh;
@@ -316,24 +412,6 @@ header, body {
 @media (width > 768px) {
   header, body {
     background-color: #EED6C4;
-    /*    nav ul li {
-            display: inline-block;
-            position: relative;
-            background-color: $logoColor;
-            padding: 10px;
-            margin: 0;
-        }
-
-        nav ul {
-            margin: 0;
-        }
-
-        nav ul li a {
-            color: inherit;
-            text-decoration: none;
-            padding: 0 0.25rem;
-        }
-        */
   }
   header .referenser, body .referenser {
     flex-direction: row;
@@ -344,24 +422,6 @@ header, body {
 @media (width > 1024px) {
   header, body {
     background: #EED6C4;
-    /*   nav ul li {
-           display: inline-block;
-           justify-content: flex-end;
-           background-color: $logoColor;
-           padding: 10px;
-           margin: 0;
-       }
-
-       nav ul {
-           margin: 0;
-       }
-
-       nav ul li a {
-           color: inherit;
-           text-decoration: none;
-           padding: 0 0.25rem;
-       }
-       */
   }
   header .referenser, body .referenser {
     flex-direction: row;
