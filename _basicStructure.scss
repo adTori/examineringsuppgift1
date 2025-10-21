@@ -1,0 +1,104 @@
+//Denna sida är till för kod som är gemensam i alla sidor som exempelvis h1 och även struktur på sidan.
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+        margin-left:20vw;
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .startBild {
+            background-image: url("images/interior1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid $thirdColor;
+            gap:30px;
+
+            .background {
+                background-color: rgba(0, 0, 0, 0.6); // translucent background behind text
+                color: #fff;
+                padding: 10px 10px;
+                border-radius: 10px;
+                max-width: 80%;
+            }
+            .h1Start {
+                font-size: $h1;
+                color:$thirdColor;
+                margin:0;
+            }
+            h2 {
+                font-size: $h2;
+                color: white;
+                font-style: italic;
+                margin:0;
+            }
+
+            &.tjänster {
+                background-image: url("images/interior2.jpg");
+            }
+            &.omOss {
+                background-image: url("images/interior3.jpg");
+            }  
+            &.referenser {
+                background-image: url("images/interior4.jpg");
+            }
+            &.kontakt {
+                background-image: url("images/interior5.jpg");
+            }
+
+        }
+    }
+}
+
+@include tablet {
+body {
+    main {
+
+        .startBild {
+            height: 300px;
+
+            .h1Start {
+                font-size: $h1-tablet;
+            }
+            h2 {
+                font-size: $h2-tablet;
+            }
+        }
+    }
+}
+}
+@include desktop {
+
+body {
+    //display: block;
+
+    main {
+        margin-left:0vw;
+        margin-top:10vh;
+
+        .startBild {
+            height: 300px;
+
+            .h1Start {
+                font-size: $h1-desktop;
+            }
+            h2 {
+                font-size: $h2-desktop;
+            }
+        }
+    }
+}
+}
