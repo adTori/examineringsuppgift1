@@ -1,0 +1,98 @@
+footer {
+margin-left: 20vw;
+display:flex;
+flex-direction: column;
+background-color:$textColor;
+    .footerLogga {
+    
+    img {
+        margin:5px;
+        max-width:50px;
+        max-height:50px;
+    }
+    }
+    .footerLinks {
+    background-color:#202427;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin:20px 0px;
+        padding:0;
+
+        a {
+            display:block;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding:20px;
+            text-decoration: none;
+            color:white;
+            margin:10px;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+    }
+    }
+    .copyRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        p {
+            color:white;
+        }
+        
+    }
+}
+
+@include desktop {
+footer {
+margin-left: 0vw;
+display:flex;
+flex-direction: column;
+background-color:$textColor;
+    .footerLogga {
+    
+    img {
+        margin:5px;
+        max-width:50px;
+        max-height:50px;
+    }
+    }
+    .footerLinks {
+    background-color:#202427;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin:20px 0px;
+        padding:0;
+
+        a {
+            text-decoration: none;
+            color:white;
+            margin:10px;
+
+            &:hover {
+                color: $logoColor;
+            }
+        }
+    }
+    }
+    .copyRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        p {
+            color:white;
+        }
+        
+    }
+}
+}

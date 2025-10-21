@@ -16,15 +16,6 @@ header, body {
                 align-items: space-evenly;
                 gap: 0px;
             }
-
-            
-            .logotype {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
 }
 
     @include desktop{
@@ -35,25 +26,9 @@ header, body {
                 align-items: space-evenly;
                 gap: 0px;
             }
-
-            .logotype {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
     }
 
 }
-
-.logotype {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 h2, h3 {
     text-align: center;
     color: $textColor;
