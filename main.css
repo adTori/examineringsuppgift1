@@ -372,6 +372,7 @@ footer .copyRight p {
   min-height: 600px;
   background-color: #333;
   border: 2px solid #B85C38;
+  box-shadow: #422800 4px 4px 0 0;
 }
 .employees .employee:hover {
   background-color: rgb(25.5, 25.5, 25.5);
@@ -402,10 +403,6 @@ footer .copyRight p {
   text-align: center;
 }
 
-html, body {
-  height: 100%;
-}
-
 header, body {
   background: #EED6C4;
 }
@@ -428,13 +425,6 @@ header, body {
     align-items: space-evenly;
     gap: 0px;
   }
-}
-
-.logotype {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 h1 {
@@ -452,14 +442,10 @@ h1 {
 
 .ref1, .ref2, .ref3 {
   background-color: white;
-  border: 2px solid #422800;
+  border: 2px solid #B85C38;
   box-shadow: #422800 2px 2px 0 0;
   margin: 10px;
   padding: 20px;
-}
-
-html, body {
-  height: 100%;
 }
 
 header, body {
@@ -474,12 +460,6 @@ header, body {
     align-items: space-evenly;
     gap: 0px;
   }
-  header .logotype, body .logotype {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 @media (width > 1024px) {
   header, body {
@@ -490,19 +470,6 @@ header, body {
     align-items: space-evenly;
     gap: 0px;
   }
-  header .logotype, body .logotype {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.logotype {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 h2, h3 {
@@ -512,8 +479,8 @@ h2, h3 {
 
 #name, #email, #tel, #reason {
   min-height: 2em;
-  width: 30%;
-  border: 2px solid #422800;
+  min-width: 31%;
+  border: 2px solid #B85C38;
   margin: 20px 0px;
 }
 
@@ -521,7 +488,7 @@ h2, h3 {
   margin: 0 0 0.6em 0;
   min-height: 13em;
   width: 95%;
-  border: 2px solid #422800;
+  border: 2px solid #B85C38;
   box-shadow: #422800 2px 2px 0 0;
   padding: 4px;
 }
@@ -542,7 +509,7 @@ h2, h3 {
 
 .send {
   background-color: #EED6C4;
-  border: 2px solid #422800;
+  border: 2px solid #B85C38;
   box-shadow: #422800 4px 4px 0 0;
   color: #333;
   display: inline-block;
@@ -559,11 +526,9 @@ h2, h3 {
   min-width: 120px;
   padding: 0 25px;
 }
-
 .send:hover {
   background-color: #996c55;
 }
-
 .send:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
