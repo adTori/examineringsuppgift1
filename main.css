@@ -199,13 +199,6 @@ header, body {
   }
 }
 
-.logotype {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h1 {
   text-align: center;
   color: #333;
@@ -243,12 +236,6 @@ header, body {
     align-items: space-evenly;
     gap: 0px;
   }
-  header .logotype, body .logotype {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 @media (width > 1024px) {
   header, body {
@@ -259,19 +246,6 @@ header, body {
     align-items: space-evenly;
     gap: 0px;
   }
-  header .logotype, body .logotype {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.logotype {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 h2, h3 {
@@ -541,7 +515,7 @@ body main {
   justify-content: flex-start;
 }
 body main .startBild {
-  background-image: url("interior1.jpg");
+  background-image: url("images/interior1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -572,16 +546,16 @@ body main .startBild h2 {
   margin: 0;
 }
 body main .startBild.tjänster {
-  background-image: url("interior2.jpg");
+  background-image: url("images/interior2.jpg");
 }
 body main .startBild.omOss {
-  background-image: url("interior3.jpg");
+  background-image: url("images/interior3.jpg");
 }
 body main .startBild.referenser {
-  background-image: url("interior4.jpg");
+  background-image: url("images/interior4.jpg");
 }
 body main .startBild.kontakt {
-  background-image: url("interior5.jpg");
+  background-image: url("images/interior5.jpg");
 }
 
 @media (width > 768px) {

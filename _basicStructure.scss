@@ -15,7 +15,7 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         .startBild {
-            background-image: url("interior1.jpg");
+            background-image: url("images/interior1.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -47,16 +47,16 @@ body {
             }
 
             &.tjänster {
-                background-image: url("interior2.jpg");
+                background-image: url("images/interior2.jpg");
             }
             &.omOss {
-                background-image: url("interior3.jpg");
+                background-image: url("images/interior3.jpg");
             }  
             &.referenser {
-                background-image: url("interior4.jpg");
+                background-image: url("images/interior4.jpg");
             }
             &.kontakt {
-                background-image: url("interior5.jpg");
+                background-image: url("images/interior5.jpg");
             }
 
         }
