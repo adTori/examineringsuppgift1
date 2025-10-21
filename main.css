@@ -404,6 +404,7 @@ h2, h3 {
 }
 footer {
   margin-left: 20vw;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   background-color: #333;
