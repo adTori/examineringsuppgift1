@@ -36,6 +36,10 @@ background-color:$textColor;
             &:hover {
                 background-color: white;
             }
+            &:focus {
+                background-color: white;
+                color:black;
+            }
         }
     }
     }
