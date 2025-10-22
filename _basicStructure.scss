@@ -1,4 +1,10 @@
 //Denna sida är till för kod som är gemensam i alla sidor som exempelvis h1 och även struktur på sidan.
+header, footer {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    font-family:'Times New Roman', Times, serif;
+}
 html, body {
   height: 100%;
   margin: 0;
