@@ -36,21 +36,19 @@ font-size: 10px;
     .menuOption {
         padding:0;
         color:white;
-        &:hover {
-            background-color:#202427 ;
-            border-right:5px solid $logoColor;
-        } 
+        &:hover{
+            background-color: #202427;
+            border-right: 5px solid $logoColor;
+        }
         &.here
         {
             border-right:5px solid $logoColor;
         }
         a {
-        display:block;
-        padding:20px 5px;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        color: inherit;   
+            display:block;
+            padding:20px 5px;
+            text-decoration: none;
+            color: inherit;   
         }
     }
 
