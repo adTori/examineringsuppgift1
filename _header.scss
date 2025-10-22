@@ -48,7 +48,12 @@ font-size: 10px;
             display:block;
             padding:20px 5px;
             text-decoration: none;
-            color: inherit;   
+            color: inherit;
+
+            &:focus{
+                background-color: #202427;
+                border-right: 5px solid $logoColor;
+            }
         }
     }
 
@@ -87,6 +92,11 @@ font-size: 20px;
     .menuOption {
         a {
         padding:20px 50px;
+            &:focus {
+                border-right:none;
+                background-color: #202427;
+                border-bottom: 5px solid $logoColor;
+            }
         }
         &:hover {
             border-right:none;

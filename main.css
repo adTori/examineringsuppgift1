@@ -11,6 +11,13 @@
   align-items: center;
   justify-content: center;
 }
+.cta:focus {
+  background-color: #202427;
+  border: 5px solid #B85C38;
+}
+.cta:focus h3 {
+  color: white;
+}
 .cta div {
   width: 200px;
   height: 50px;
@@ -354,6 +361,10 @@ h2, h3 {
   text-decoration: none;
   color: inherit;
 }
+.menuOption a:focus {
+  background-color: #202427;
+  border-right: 5px solid #996c55;
+}
 
 @media (width > 768px) {
   .menuDiv {
@@ -388,6 +399,11 @@ h2, h3 {
   }
   .menuDiv .menuOption a {
     padding: 20px 50px;
+  }
+  .menuDiv .menuOption a:focus {
+    border-right: none;
+    background-color: #202427;
+    border-bottom: 5px solid #996c55;
   }
   .menuDiv .menuOption:hover {
     border-right: none;
@@ -434,6 +450,10 @@ footer .footerLinks ul a {
 }
 footer .footerLinks ul a:hover {
   background-color: white;
+}
+footer .footerLinks ul a:focus {
+  background-color: white;
+  color: black;
 }
 footer .copyRight {
   display: flex;
