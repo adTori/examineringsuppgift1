@@ -1,45 +1,47 @@
-header, body {
+body {
 
     background: $fourthColor;
 
     @include tablet{
         background-color: $fourthColor;
 
-                .referenser {
+            .referenser {
                 flex-direction: row;
                 align-items: space-evenly;
                 gap: 0px;
             }
-        }
+    }
 
     @include desktop{
         background: $fourthColor;
 
-                .referenser {
+            .referenser {
                 flex-direction: row;
                 align-items: space-evenly;
                 gap: 0px;
             }
-        }
     }
+}
 
 h1 {
     text-align: center;
     color: $textColor;
 }
 
-.referenser {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
+// referens 1, referens 2, referens 3
 .ref1, .ref2, .ref3 {
     background-color: white;
     border:2px solid $thirdColor;
     box-shadow: #422800 2px 2px 0 0;
     margin: 10px;
     padding: 20px;
+}
+
+// dold box runt omkring referenserna
+.referenser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }

@@ -1,4 +1,4 @@
-header, body {
+body {
 
     background: $fourthColor;
 
@@ -21,7 +21,6 @@ header, body {
                 gap: 0px;
             }
     }
-
 }
 
 h2, h3 {
@@ -29,7 +28,7 @@ h2, h3 {
     color: $textColor;
 }
 
-// input av användare + val av ämne
+// input-boxar samt lista för val av kontaktämne
 #name, #email, #tel, #reason {
     min-height: 2em;
     min-width: 31%;
@@ -37,6 +36,7 @@ h2, h3 {
     margin: 20px 0px;
 }
 
+// fritext-box
 .form-control {
     margin: 0 0 .6em 0;
     min-height: 13em;
@@ -44,22 +44,6 @@ h2, h3 {
     border:2px solid $thirdColor;
     box-shadow: #422800 2px 2px 0 0;
     padding: 4px;
-}
-
-// kontaktinformation
-.information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-// kontaktinformation
-.contact, .visit, .picture {
-    text-align: center;
-    color: $textColor;
 }
 
 // knapp för att skicka
@@ -89,5 +73,25 @@ h2, h3 {
         box-shadow: #422800 2px 2px 0 0;
         transform: translate(2px, 2px);
         }
+}
 
+// hela kontaktformuläret, inklusive text och skicka-knapp
+.form {
+    margin-left: 10px;
+}
+
+// kontaktinformation, bild och besöksadress
+.contact, .picture, .visit {
+    text-align: center;
+    color: $textColor;
+}
+
+// dold box runt omkring kontaktinformation, bild och besöksadress
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
